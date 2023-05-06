@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Merriweather', serif;
+}
+.home{
+    background-image: url(images4/bg-masthead.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.btn1{
+    background-color: #f4623a;
+    transition: all 1s;
+}
+.btn1:hover{
+    background-color: #a53204;
+}
+.navbar{
+    z-index: 9999999999;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+.collapse ul li a:hover{
+    color: #f4623a;
+    transition: all 1s;
+}
+.layer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(110, 84, 61, 0.6);
+    color: white;
+}
+.text{
+    position: relative;
+}
+.text::after{
+    content: '';
+    height: 3px;
+    width: 90px;
+    position:absolute;
+    bottom: -15px;
+    background-color: #f4623a;
+    right: 47%;
+}
+.text2::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 30%;
+    background-color: white;
+    bottom: -15px;
+    right: 45%;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 60vh;
+    width: 100%;
+    background-color: #f4623a;
+    color: white;
+}
+.btn2{
+    background-color: white;
+    transition: all 1s;
+}
+
+.btn2:hover{
+    background-color: #a53204;
+}
+.services-text i{
+    color: #f4623a;
+    font-size: 40px;
+    padding: 10px 0px;
+}
+.text3::after{
+    content: '';
+    height: 3px;
+    width: 90px;
+    position:absolute;
+    bottom: -15px;
+    background-color: #f4623a;
+    right: 47%;
+}
+.layer-img{
+    display: none;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(249, 103, 31, 0.5);
+    color: white;
+}
+.layer-center{
+    padding: 100px;
+    text-align: center;
+}
+.portfolio-img:hover .layer-img{
+    display: block;
+}
+textarea{
+    height: 200px;
+}
+.container-contact{
+    width: 50%;
+    margin: auto;
+}
+.title-contact{
+    text-align: center;
+}
+.submit-btn{
+    background-color: #f4623a;
+    transition: all 1s;
+    color: white;
+    border: none;
+}
+.title-contact h2::after{
+    content: '';
+    height: 3px;
+    width: 90px;
+    position:absolute;
+    bottom: -15px;
+    background-color: #f4623a;
+    right: 47%;
+}
+.submit-btn:hover{
+    background-color: #a53204;
+}
+input:hover{
+    box-shadow: 0px 2px 15px rgba(228, 22, 22, 0.6);
+} 
+@media screen and (max-width:600px){
+    .navbar{
+        padding: 30px 0px;
+    }
+}
+
